@@ -33,7 +33,7 @@ public class MqttPubSubSample {
 
             Properties sslProperties = new Properties();
             sslProperties.setProperty("com.ibm.ssl.trustStore", "/Users/yohei/work/paho-java-tls-sample/conf/ca.crt.jks");
-
+            sslProperties.setProperty("com.ibm.ssl.trustStorePassword", "simpleiot");
             connOpts.setSSLProperties(sslProperties);
 
             sampleClient.setCallback(new MyCallback(mapper));
