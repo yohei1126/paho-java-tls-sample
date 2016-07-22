@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin:'application'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.13'
+    compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+    compile 'org.msgpack:jackson-dataformat-msgpack:0.8.1'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = "MqttPubSubSample"
