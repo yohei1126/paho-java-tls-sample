@@ -32,7 +32,6 @@ public class MqttPubSubSample {
             connOpts.setCleanSession(true);
 
             Properties sslProperties = new Properties();
-            sslProperties.setProperty("com.ibm.ssl.protocol", "TLS");
             sslProperties.setProperty("com.ibm.ssl.trustStore", "/Users/yohei/work/paho-java-tls-sample/conf/ca.crt.jks");
 
             connOpts.setSSLProperties(sslProperties);
